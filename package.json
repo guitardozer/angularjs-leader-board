@@ -4,7 +4,10 @@
   "version": "0.0.1-2",
   "private": true,
   "dependencies": {
+    "compass": "^0.1.1",
     "express": "3.x",
+    "gem": "^2.4.3",
+    "sass": "^1.2.1",
     "socket.io": "0.9.x"
   },
   "subdomain": "simpulton.angularjs-leader-board",

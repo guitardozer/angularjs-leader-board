@@ -13,11 +13,13 @@
 <body data-ng-controller="MainCtrl" role="application" class="test-surface">
     <div class="ldrbd-widget" role="widget" data-ng-cloak>
         <header role="heading">
-            <h1 class="widget-title">Leaderboard</h1>
+            <h1 class="widget-title">
+                <img src="images/ZBsphereWords.png" style="width: 30%; height: auto;" alt="Zone Blue"></br>
+            Leaderboard</h1>
         </header>
         <div class="ldr-list-wrapper" role="structure">
             <div class="ldr-list table table-hover" role="grid">
-                
+
                 <div class="thead" role="rowheader">
                     <div class="tr" role="row">
                         <div class="th pic"></div>
@@ -35,7 +37,7 @@
                         <div class="td score" role="gridcell" title="{{contestant.score}}"><div class="clip-text">{{contestant.score}}</div></div>
                     </div>
                 </div>
-                
+
             </div>
 
             <footer role="status">
@@ -48,6 +50,6 @@
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
-    <script src="/js/leader-board.js"></script> 
+    <script src="/js/leader-board.js"></script>
 </body>
 </html>

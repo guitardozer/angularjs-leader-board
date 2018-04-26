@@ -7,16 +7,17 @@ $widgetRowHeight: 56px;
 $widgetCellPad: 8px;
 $widgetRowBg: lighten($tableBorder, 11);
 $headerYellowBg: #ffc321;
+$headerBlueBg: #20b4ff;
 // DO NOT EDIT THESE - EDIT THE BASE COLOR ABOVE ONLY
-$headerBgLight: desaturate(adjust_hue($headerYellowBg, 9deg), 7%);
+$headerBgLight: desaturate(adjust_hue($headerBlueBg, 9deg), 7%);
 $headerBgLightest: lighten($headerBgLight, 18);
-$headerBgDarkest: saturate(darken($headerYellowBg, 18), 10);
+$headerBgDarkest: saturate(darken($headerBlueBg, 18), 10);
 $headerBgDark: lighten(saturate($headerBgDarkest, 5), 5);
 $headerTxtColor: darken(adjust_hue($headerBgDarkest, -10deg), 19);
 // admin vars
 $newRowAccentBg: lighten($headerBgLightest, 20%);
 
-//  These styles will be applied globally - 
+//  These styles will be applied globally -
 //  to both the widget and the admin area of the application
 // ----------------------------------------------
 #{elements-of-type(block)} { @include box-sizing(border-box); }
@@ -27,7 +28,7 @@ $newRowAccentBg: lighten($headerBgLightest, 20%);
 body {
     color: $textColor;
     text-shadow: 0 1px 0 rgba(contrast-color($textColor), .9);
-    @include disableUserSelect; 
+    @include disableUserSelect;
 }
 
 .clip-text {
@@ -40,7 +41,7 @@ body {
 
 // table-less data grids
 .table figure { margin: 0; }
-.tbody, .thead, .tr {  
+.tbody, .thead, .tr {
     clear: both;
     width: 100%;
     margin: 0;

@@ -1,8 +1,8 @@
 //+ Leaderboard Widget Styles
 //+ --------------------------------------------------
 
-& { 
-    width: $widgetWidth; 
+& {
+    width: $widgetWidth;
 }
 //  These styles will be applied to the widget only
 // since the @import is nested within .ldrbd-widget
@@ -18,7 +18,7 @@ $headerRibbonCornerZindex: 1;
 
 header {
     background-color: mix($headerBgDark, $headerBgDarkest, 50%); // degrade gracefully
-    @include background-image(linear-gradient(top, $headerBgDark, $headerBgDarkest)); 
+    @include background-image(linear-gradient(top, $headerBgDark, $headerBgDarkest));
     padding: $headerBdWidth; // creates the "border" effect
     text-align: center;
     position: relative;
@@ -35,10 +35,10 @@ header {
         content: '';
         background-color: $headerBgDarkest;
     }
-    &:before {  
+    &:before {
         left: ($wrapperPad/2) - $headerBdWidth;
     }
-    &:after { 
+    &:after {
         right: ($wrapperPad/2) - $headerBdWidth;
     }
 
@@ -51,8 +51,8 @@ header {
         color: $headerTxtColor;
         text-shadow: 0 1px 0 $headerBgLightest;
         line-height: normal;
-        background-color: mix($headerBgLight, $headerYellowBg, 50%); // degrade gracefully
-        @include background-image(linear-gradient(top, $headerBgLight, $headerYellowBg)); 
+        background-color: mix($headerBgLight, $headerBlueBg, 50%); // degrade gracefully
+        @include background-image(linear-gradient(top, $headerBgLight, $headerBlueBg));
         @include box-shadow(inset 0 1px 0 $headerBgLightest);
 
         // use the :after element of this box for the header drop shadow since the header itself is "below" the wrapper
@@ -83,7 +83,7 @@ footer {
 
     // keep above .ldr-list-wrapper so we can drop a shadow on it
     position: relative;
-    z-index: $headerRibbonCornerZindex + 2; 
+    z-index: $headerRibbonCornerZindex + 2;
     color: darken($footerBg, 40);
     text-align: center;
 
@@ -123,9 +123,9 @@ footer {
         border-bottom: 0 none;
     }
 
-    .tr, .td, .th { 
-        height: $widgetRowHeight; 
-        line-height: $widgetRowHeight; 
+    .tr, .td, .th {
+        height: $widgetRowHeight;
+        line-height: $widgetRowHeight;
         background-color: $widgetRowBg;
     }
     .td, .th {
